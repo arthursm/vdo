@@ -20,9 +20,20 @@ export class MyApp {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
+    
     this.pages = [
+      { title: 'Início', component: HomePage },
+      { title: 'Linguagens e Códigos', component: HomePage },
+      { title: 'Ciências da Natureza', component: HomePage },
+      { title: 'Ciências Humanas', component: HomePage },
+      { title: 'Ciências Exatas', component: HomePage },  
+      { title: 'Estudar', component: HomePage },
+      { title: 'ENEM 2017', component: HomePage },
+      { title: 'ENEM 2016', component: HomePage },
+      { title: 'ENEM 2017', component: HomePage },
+      { title: 'Vestibular', component: HomePage },
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage } 
     ];
 
   }

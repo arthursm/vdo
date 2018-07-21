@@ -1,3 +1,67 @@
 page-home {
+    $tamanho: 19vw;
 
+
+    .menu{
+        border-radius: 50%;
+        width: $tamanho;
+        height: $tamanho;
+        background-color: #2ad2c9;
+        float: left;
+        margin: 1.8vw; 
+    }
+
+    ion-icon {
+        font-size: 12vw;
+        color: white; 
+    }
+
+    .img{
+        margin-top: -8vh;  
+    }
+    .btn_menu{
+        margin-top: -5vh;
+    } 
+    .nam_menu{
+        max-width: 90vw;
+    }
+    .cont{  
+        font-size: 3vh;
+        font-weight: bold; 
+        margin-left: 3vw;
+    }
+    .contj{  
+        font-size: 3vh;
+        font-weight: bold; 
+        margin-left: 2vw;
+    }
+    .conte{  
+        font-size: 3vh;
+        font-weight: bold; 
+        margin-left: 2vw;
+    }     
+    .contd{  
+        font-size: 3vh;
+        font-weight: bold; 
+        margin-left: 6.5vw;
+    }
+    .mens{
+        font-size: 2.8vh;
+        margin-top: 5vh;
+    }
+    .tit{
+
+    }
+    .sbt{
+        float: right;
+        font-style: italic;
+        color: #2ad2c9;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+    }
+    .conteu{
+        color: gray;
+    }
 }
