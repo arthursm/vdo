@@ -3,8 +3,8 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { HomePage } from '../pages/home/home'; 
+import { EnemPage } from '../pages/enem/enem';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,22 +22,21 @@ export class MyApp {
     // used for an example of ngFor and navigation
     
     this.pages = [
-      { title: 'Início', component: HomePage },
+      { title: 'Início', component: HomePage },  
+      { title: 'ENEM', component: EnemPage },
+      { title: 'Vestibular', component: HomePage },
       { title: 'Linguagens e Códigos', component: HomePage },
       { title: 'Ciências da Natureza', component: HomePage },
       { title: 'Ciências Humanas', component: HomePage },
-      { title: 'Ciências Exatas', component: HomePage },  
-      { title: 'Estudar', component: HomePage },
-      { title: 'ENEM 2017', component: HomePage },
-      { title: 'ENEM 2016', component: HomePage },
-      { title: 'ENEM 2017', component: HomePage },
-      { title: 'Vestibular', component: HomePage },
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage } 
+      { title: 'Ciências Exatas', component: HomePage }, 
+      { title: 'FIES 2017', component: HomePage },
+      { title: 'SISU 2016', component: HomePage },
+      { title: 'PROUNI 2015', component: HomePage }, 
+      { title: 'Sobre', component: HomePage } 
     ];
 
   }
-
+  
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
