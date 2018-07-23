@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { QuizPage } from '../quiz/quiz';
 /**
- * Generated class for the SetupPage page.
+ * Generated class for the QuizPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,28 @@ import { QuizPage } from '../quiz/quiz';
 
 @IonicPage()
 @Component({
-  selector: 'page-setup',
-  templateUrl: 'setup.html',
+  selector: 'page-quiz',
+  templateUrl: 'quiz.html',
 })
-export class SetupPage {
+export class QuizPage {
+
+  ciencia: any;
+  eu: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.ciencia = navParams.get('data');
+    this.eu = navParams.get('adata');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SetupPage');
+    console.log('ionViewDidLoad QuizPage');
   }
 
-  linkQuiz(){
-    this.navCtrl.push(QuizPage);
-  }
+  carro  = {
+    "nome":"John",
+    "age":30,
+    "cars":[ "Ford", "BMW", "Fiat" ]
+    }
+
+    
 }

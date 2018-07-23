@@ -3,14 +3,17 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home'; 
-import { EnemPage } from '../pages/enem/enem';
-
+import { HomePage } from '../pages/home/home';  
+import { SetupPage } from '../pages/setup/setup';
+import { VestibularPage } from '../pages/vestibular/vestibular';
+import { InfoPage } from '../pages/info/info';
+import { EstudosPage } from '../pages/estudos/estudos';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  
 
   rootPage: any = HomePage;
 
@@ -23,16 +26,13 @@ export class MyApp {
     
     this.pages = [
       { title: 'Início', component: HomePage },  
-      { title: 'ENEM', component: EnemPage },
-      { title: 'Vestibular', component: HomePage },
-      { title: 'Linguagens e Códigos', component: HomePage },
-      { title: 'Ciências da Natureza', component: HomePage },
-      { title: 'Ciências Humanas', component: HomePage },
-      { title: 'Ciências Exatas', component: HomePage }, 
-      { title: 'FIES 2017', component: HomePage },
-      { title: 'SISU 2016', component: HomePage },
-      { title: 'PROUNI 2015', component: HomePage }, 
-      { title: 'Sobre', component: HomePage } 
+      { title: 'ENEM', component: SetupPage },
+      { title: 'Vestibular', component: VestibularPage },
+      { title: 'Estudar', component: EstudosPage }, 
+      { title: 'FIES', component: InfoPage },
+      { title: 'SISU', component: InfoPage },
+      { title: 'PROUNI', component: InfoPage }, 
+      { title: 'Sobre', component: InfoPage } 
     ];
 
   }

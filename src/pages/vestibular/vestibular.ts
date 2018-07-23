@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SetupPage } from '../setup/setup';
+
+import { QuizPage } from '../quiz/quiz';
 
 /**
- * Generated class for the EnemPage page.
+ * Generated class for the VestibularPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +12,24 @@ import { SetupPage } from '../setup/setup';
 
 @IonicPage()
 @Component({
-  selector: 'page-enem',
-  templateUrl: 'enem.html',
+  selector: 'page-vestibular',
+  templateUrl: 'vestibular.html',
 })
-export class EnemPage {
+export class VestibularPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EnemPage');
+  dados: any = {  
+     lc: true, 
+     ch: true, 
+     ce: true, 
+     cn: true 
   }
-
-  linkSetup(){
-    this.navCtrl.push(SetupPage);
+/*
+  linkQuiz() {
+    this.navCtrl.push(QuizPage)
+    console.log(this.dados)
   }
-
+  */
 }

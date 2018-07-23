@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="vestibular">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enem</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <span class="titulo">Ano da aplicação</span>
+  <ion-item>
+    <ion-label>2018</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.ano.a2018" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>2017</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.ano.a2017" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>2016</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.ano.a2016" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Anteriores </ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.ano.a2000" ></ion-checkbox>
+  </ion-item>
+  <br>
+
+  <span class="titulo">Conhecimentos</span>
+  <ion-item>
+    <ion-label>Linguagens e Códigos</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.conhecimento.lc" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ciências Humanas</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.conhecimento.ch" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ciências da Natureza</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.conhecimento.cn" checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ciências Exatas</ion-label>
+    <ion-checkbox color="vestibular" [(ngModel)]="dados.conhecimento.ce" checked="true"></ion-checkbox>
+  </ion-item>
+  <br>
+  <button ion-button block color="vestibular" (click) = "linkQuiz()">Jogar</button> 
+
+  <!--
+
+<form (ngSubmit)="logForm()">
+  <ion-item>
+    <ion-label>Todo</ion-label>
+    <ion-input type="text" [(ngModel)]="todo.title" name="title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+  </ion-item>
+  <button ion-button type="submit" block>Add Todo</button>
+</form> -->
+</ion-content>

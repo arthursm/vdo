@@ -9,9 +9,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { EnemPage } from '../pages/enem/enem';
-import { QuizPage } from '../pages/enem/quiz/quiz';
-import { SetupPage } from '../pages/enem/setup/setup';
-import { RankPage } from '../pages/enem/rank/rank';
+import { QuizPage } from '../pages/quiz/quiz';
+import { SetupPage } from '../pages/setup/setup';
+import { RankPage } from '../pages/rank/rank';
+import { InfoPage } from '../pages/info/info';
+import { VestibularPage } from '../pages/vestibular/vestibular';
+import { EstudosPage } from '../pages/estudos/estudos';
+import { ConteudoPage } from '../pages/conteudo/conteudo';
+import { MateriasPage } from '../pages/materias/materias';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { RankPage } from '../pages/enem/rank/rank';
     EnemPage,
     QuizPage,
     SetupPage,
-    RankPage
+    RankPage,
+    InfoPage,
+    VestibularPage,
+    EstudosPage,
+    ConteudoPage,
+    MateriasPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +43,13 @@ import { RankPage } from '../pages/enem/rank/rank';
     EnemPage,
     QuizPage,
     SetupPage,
-    RankPage
+    RankPage,
+    InfoPage,
+    VestibularPage,
+    EstudosPage,
+    ConteudoPage,
+    MateriasPage
+
   ],
   providers: [
     StatusBar,
